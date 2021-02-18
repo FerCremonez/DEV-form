@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+    <title>Registration</title>
+</head>
+
+<body>
+    <div>
+        <br> 
+        <h1 id="tittle">DEV Registration</h1>
+        <p id="subtittle">Complete your informations</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="group">
+            <div class="campo">
+                <label for="name"><strong>Name</strong></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="surname"><strong>Surname</strong></label>
+                <input type="text" name="surname" id="surname" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email"name="email" id="email" required>
+            
+        </div>
+        <br>
+        <div class="campo">
+            <label><strong>Which side of the application do you develop on?</strong></label>
+            
+            <label>
+                <input type="radio" name="devweb" id="devweb" value="frontend" checked>Front-end
+            </label>
+            
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+
+            <label>
+                <input type="radio" name="devweb"value="fullstacl">Fullstack
+            </label>
+            
+        </div>
+       
+
+        <div class="campo">
+            <label for="seniority"><strong>Seniority</strong></label>
+            <select id="seniority">
+                <option selected disabled value="">Select</option>
+                <option>Junior</option>
+                <option>Mid-Level</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <br>
+
+        <fieldset class="group">
+            <div id="check">
+                <label>
+                   <strong> Select the Tools you use:</strong>
+                </label> <br> 
+
+                <input type="checkbox" id="tool1" name="tool1" value="HTML">
+                <label for="tool1">HTML</label>
+
+                <input type="checkbox" id="tool2" name="tool2" value="CSS">
+                <label for="tool2">CSS</label>
+
+                <input type="checkbox" id="tool3" name="tool3" value="JS">
+                <label for="tool3">JS</label>
+
+                <input type="checkbox" id="tool4" name="tool4" value="Python">
+                <label for="tool4">Python</label>
+
+                <input type="checkbox" id="tool5" name="tool5" value="C#">
+                <label for="tool5">C#</label>
+
+                <br>
+
+                <input type="checkbox" id="tool6" name="tool6" value="SQL">
+                <label for="tool6">SQL</label>
+
+                <input type="checkbox" id="tool7"
+                name="tool7" value="Angular">
+                <label for="tool6">Angular</label>
+
+                <input type="checkbox" id="tool8" 
+                name="tool8" value="Bootstrap"
+                <label for="tool8">Bootstrap</label>
+
+                <input type="checkbox" id="tool9"
+                name="React" value="React">
+                <label for="tool9">React</label>
+            </div>
+        </fieldset>
+
+
+        <div class="campo">
+            <br>
+            <label><strong>Teel us about your experience:</strong></label>
+            <textarea rows="5" style="width: 26em" id="experience"></textarea>
+        </div>
+    
+        <button class="button" type="submit" onsubmit="">Submit</button>
+
+
+
+
+        <br>
+    </form>
+</body>
+</html>
